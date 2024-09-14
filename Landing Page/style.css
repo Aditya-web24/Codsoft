@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poopins", sans-serif;
+}
+section {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+    background: url(boat11.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center; 
+} 
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    color: red;
+    font-size: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+header .navigation a{
+    color:red;
+    text-decoration: none;
+    font-weight:500px;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px ;
+    transition: 0.3s;
+    transition-property: transform;
+
+}
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+header .navigation a:hover{
+    background: #fff;
+}
+.content{
+    max-width: 650px;
+    margin: 60px 100px; 
+}
+.content .info h2{
+    display: flex;
+    color :rgba(216, 38, 38, 0.754);
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: -19px;
+    line-height: 60px;
+    margin-bottom: 30px; 
+}
+.content .info h2 span{
+    display: flex;
+    margin-left: -320px;
+    color:rgba(255, 0, 0, 0.453);
+    font-size: 50px;
+    font-weight: 600;
+}
+.content .info p{
+    font-size:17px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: white;
+    line-height: 30px;
+}
+.content .info-btn{
+    color:#fff;
+    background:red;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding:10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+.content .info-btn:hover{
+    background: rgb(138, 0, 0);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.icons a{
+    margin-top: 40px;
+    display: flex;
+    text-decoration: none;
+    color:rgb(214, 22, 22);
+    font-size: 40px;
+    padding: 10px;
+}
+.icons a:hover{
+    color: red;
+    transition: 1s;
+    transition-timing-function: ease-in;
+    transform:scale(1.2);
+}
+@media (max-width:600px){
+    header .navigation{
+        display: flex;
+        overflow: hidden;
+
+    }
+
+}
